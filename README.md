@@ -46,8 +46,14 @@ HTMX plugin for Flask
 
 https://github.com/edmondchuc/flask-htmx
 
-## Other links
+## Links
 
-Using Google cloud run like Vercel and Netlify
+### Google cloud run like Vercel and Netlify
 
 https://hackernoon.com/deploy-like-vercel-and-netlify-with-cloud-run-live-preview-and-modern-workflow
+
+### djhtml
+
+DJHTML is a Django/Jinja HTML/CSS/Javascript indenter
+
+https://github.com/rtts/djhtml

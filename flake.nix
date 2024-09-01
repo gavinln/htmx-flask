@@ -21,6 +21,7 @@
               poetry
               pythonEnv
               ruff
+              tailwindcss
             ];
             shellHook = ''
               # set SHELL to interactive bash
