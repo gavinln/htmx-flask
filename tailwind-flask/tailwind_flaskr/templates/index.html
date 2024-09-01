@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block title %} {{ title }} {% endblock title %} {%
+block content %}
+
+<h4 class="p-2 text-2xl">Basic Tailwind Example</h4>
+
+<button class="bg-sky-600 hover:bg-sky-700 px-3 py-3 text-white rounded-lg">
+  Button Example
+</button>
+
+<div class="bg-gray-300 text-red-600">{{ text }}</div>
+
+{% endblock content %}
