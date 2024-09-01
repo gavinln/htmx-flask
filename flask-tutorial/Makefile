@@ -35,6 +35,14 @@ flaskr-run: env-up  ## run Flask app at http://127.0.0.1:5000/hello
 flaskr-init-db: env-up  ## initliaze databsae
 	poetry run flask --app flaskr init-db
 
+.PHONY: flaskr-help
+flaskr-help: env-up  ## flaskr commands help
+	poetry run flask --app flaskr --help
+
+.PHONY: flaskr-routes
+flaskr-routes: env-up  ## flaskr routes
+	poetry run flask --app flaskr routes
+
 .PHONY: clean
 clean: env-rm  ## remove temporary files
 	rm -f poetry.lock
