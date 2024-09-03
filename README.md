@@ -4,7 +4,8 @@
 interfaces. It allows you to access AJAX, CSS Transitions, WebSockets, and
 Server-Sent Events directly in HTML, using attributes.
 
-[Flask][110] is a lightweight and flexible web framework for Python that allows you to build web applications and APIs with minimal boilerplate code.
+[Flask][110] is a lightweight and flexible web framework for Python that allows
+you to build web applications and APIs with minimal boilerplate code.
 
 This repository has examples that demonstrate using Flask with htmx.
 
@@ -46,20 +47,6 @@ HTMX plugin for Flask
 
 https://github.com/edmondchuc/flask-htmx
 
-## Minimal CSS frameworks
-
-Github repository comparing minimal classless CSS frameworks
-
-https://github.com/dbohdan/classless-css
-
-Repository with an HTML 5 elements page to compare CSS frameworks
-
-https://github.com/cbracco/html5-test-page
-
-Pico CSS - a minimal CSS framework for semantic HTML
-
-https://github.com/picocss/pico
-
 ## Links
 
 ### Google cloud run like Vercel and Netlify
@@ -71,3 +58,13 @@ https://hackernoon.com/deploy-like-vercel-and-netlify-with-cloud-run-live-previe
 DJHTML is a Django/Jinja HTML/CSS/Javascript indenter
 
 https://github.com/rtts/djhtml
+
+### Flask vs FastAPI
+
+Moving from Flask to FastAPI
+
+https://testdriven.io/blog/moving-from-flask-to-fastapi/
+
+Flask vs FastAPI
+
+https://christophergs.com/python/2021/06/16/python-flask-fastapi/
