@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock title %}
+
+{% block content %}
+<div class="grid">
+  <div hx-boost="true" hx-target="#content" hx-push-url="false">
+    <div><a href="/click_to_edit">Click to edit</a></div>
+    <div><a href="/html5_test">HTML5 test examples</a></div>
+  </div>
+  <div id="content">{{ text }}</div>
+  <div></div>
+</div>
+{% endblock content %}

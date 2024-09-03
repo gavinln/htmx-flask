@@ -1,0 +1,23 @@
+<form hx-put="/click_to_edit/contact/0" hx-target="this" hx-swap="outerHTML">
+  <div>
+    <label>First Name</label>
+    <input type="text" name="firstName" value="{{ contact.firstName }}" />
+  </div>
+  <div>
+    <label>Last Name</label>
+    <input type="text" name="lastName" value="{{ contact.lastName }}" />
+  </div>
+  <div>
+    <label>Email Address</label>
+    <input type="email" name="email" value="{{ contact.email }}" />
+  </div>
+  <fieldset class="grid">
+    <button type="submit">Submit</button>
+    <a
+      href="/click_to_edit/contact/0"
+      type="button"
+      class="secondary"
+      >Cancel</a
+    >
+  </fieldset>
+</form>
