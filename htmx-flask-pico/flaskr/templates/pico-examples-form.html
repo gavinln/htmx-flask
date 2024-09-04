@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block style%}
+  {% include "pico-examples-style.html" %}
+{% endblock style %}
+
+{% block content %}
+  <div class="grid" id="pico_examples">
+    <div>{% include "pico-examples-menu.html" %}</div>
+    <div>
+      <div>
+        <h2>Basic form</h2>
+        <form>
+          <fieldset>
+            <label>
+              First name
+              <input
+                name="first_name"
+                placeholder="First name"
+                autocomplete="given-name"
+              />
+            </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                autocomplete="email"
+              />
+              <small>
+                We'll never share your email with anyone else.
+              </small>
+            </label>
+          </fieldset>
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+      <div>
+        <h2>Form with grid</h2>
+        <form>
+          <fieldset class="grid">
+            <input
+              name="login"
+              placeholder="Login"
+              aria-label="Login"
+              autocomplete="username"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              aria-label="Password"
+              autocomplete="current-password"
+            />
+            <input
+              type="submit"
+              value="Log in"
+            />
+          </fieldset>
+        </form>
+      </div>
+      <div>
+        <h2>Form with group</h2>
+        <form>
+          <fieldset role="group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              autocomplete="email"
+            />
+            <input type="submit" value="Subscribe" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

@@ -35,3 +35,13 @@ def index():
 @app.route("/html5_test")
 def html5_test():
     return render_template("html5-test.html")
+
+
+@app.route("/pico_examples")
+@app.route("/pico_examples/<page>")
+def pico_examples(page=None):
+    if not page:
+        page = "typography"
+    template_name = "pico-examples-{}.html".format(page)
+    print(template_name)
+    return render_template(template_name)

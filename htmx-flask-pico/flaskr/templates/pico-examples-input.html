@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block style%}
+  {% include "pico-examples-style.html" %}
+{% endblock style %}
+
+{% block content %}
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h2>Common inputs</h2>
+      <input type="text" name="text" placeholder="Text" />
+      <input type="email" name="email" placeholder="Email" />
+      <input type="number" name="number" placeholder="Number" />
+      <input type="password" name="password" placeholder="Password" />
+    </div>
+    <div>
+      <h2>Datetime inputs</h2>
+      <input type="date" name="date" />
+      <input type="datetime-local" name="datetime-local" />
+      <input type="time" name="time" />
+    </div>
+    <div>
+      <h2>Search input</h2>
+      <input type="search" name="search" placeholder="Search" />
+    </div>
+    <div>
+      <h2>Color input</h2>
+      <input type="color" />
+    </div>
+    <div>
+      <h2>File input</h2>
+      <input type="file" />
+    </div>
+    <div>
+      <h2>Disabled input</h2>
+      <input type="text" name="text" placeholder="Disabled" disabled />
+    </div>
+    <div>
+      <h2>Read-only input</h2>
+      <input type="text" name="text" placeholder="Read-only" readonly />
+    </div>
+    <div>
+      <h2>Textarea</h2>
+      <textarea name="bio" placeholder="Write a short bio...">
+      </textarea>
+    </div>
+  </div>
+</div>
+{% endblock content %}

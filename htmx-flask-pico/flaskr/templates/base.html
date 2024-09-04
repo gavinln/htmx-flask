@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="2"/> -->
     <title>{% block title %}{% endblock title %}</title>
     <!-- Pico CSS -->
     <link
@@ -15,12 +16,18 @@
       integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ"
       crossorigin="anonymous"
     ></script>
+    <style>
+      {% block style %}{% endblock style %}
+    </style>
   </head>
   <body>
     <main class="container">
       <hgroup>
         <h1>Flask with HTMX and Pico CSS</h1>
-        <p>Examples of using HTMX for interactivity and Pico for styling</p>
+        <p>
+          Examples of using HTMX for interactivity and
+          <a href="/pico_examples">Pico</a> for styling
+        </p>
       </hgroup>
       <div>{% block content %}{% endblock content %}</div>
     </main>
