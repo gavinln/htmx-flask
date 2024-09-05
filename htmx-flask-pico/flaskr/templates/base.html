@@ -27,9 +27,25 @@
         <p>
           Examples of using HTMX for interactivity and
           <a href="/pico_examples">Pico</a> for styling
+          <a href="#" id="theme-switcher">&#9965;</a>
         </p>
       </hgroup>
       <div>{% block content %}{% endblock content %}</div>
     </main>
+    <!-- switch betwen auto/light/dark -->
+    <script>
+      let isLight = true;
+      const html = document.documentElement;
+      const switchTheme = document.getElementById("theme-switcher");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        html.setAttribute("data-theme", "auto");
+      });
+      switchTheme.addEventListener("click", (e) => {
+        e.preventDefault();
+        isLight = !isLight;
+        html.setAttribute("data-theme", isLight ? "light" : "dark");
+      });
+    </script>
   </body>
 </html>
