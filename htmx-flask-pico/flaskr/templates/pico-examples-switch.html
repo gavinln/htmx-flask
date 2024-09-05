@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block style %}
+  {% include "pico-examples-style.html" %}
+{% endblock style %}
+
+{% block content %}
+  <div class="grid" id="pico_examples">
+    <div>{% include "pico-examples-menu.html" %}</div>
+    <div>
+      <fieldset>
+        <h2>Switch</h2>
+        <label>
+          <input name="terms" type="checkbox" role="switch" />
+          I agree to the Terms
+        </label>
+        <label>
+          <input name="opt-in" type="checkbox" role="switch" checked />
+          Receive news and offers
+        </label>
+      </fieldset>
+      <fieldset>
+        <h2>Switch disabled</h2>
+        <label>
+          <input name="publish" type="checkbox" role="switch" disabled />
+          Publish on my profile
+        </label>
+        <label>
+          <input
+            name="change-password"
+            type="checkbox"
+            role="switch"
+            checked
+            disabled
+          />
+          Change my password at next login
+        </label>
+      </fieldset>
+    </div>
+  </div>
+{% endblock content %}

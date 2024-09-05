@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block style %} {% include
+"pico-examples-style.html" %} {% endblock style %} {% block content %}
+
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h2>Card</h2>
+      <article>I’m a card!</article>
+    </div>
+    <div>
+      <h2>Sectioned Card</h2>
+      <article>
+        <header>Header</header>
+        Body
+        <footer>Footer</footer>
+      </article>
+    </div>
+  </div>
+</div>
+{% endblock content %}

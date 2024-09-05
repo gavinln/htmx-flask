@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block style %}
+  {% include "pico-examples-style.html" %}
+{% endblock style %}
+
+{% block content %}
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h2>Select dropdown</h2>
+      <select required>
+        <option selected disabled value="">
+          Select your favorite cuisine...
+        </option>
+        <option>Italian</option>
+        <option>Japanese</option>
+        <option>Indian</option>
+        <option>Thai</option>
+        <option>French</option>
+      </select>
+    </div>
+    <div>
+      <h2>Select multiple</h2>
+      <select multiple size=6>
+        <option disabled>Select your favorite snacks...</option>
+        <option>Cheese</option>
+        <option selected>Fruits</option>
+        <option selected>Nuts</option>
+        <option>Chocolate</option>
+        <option>Crackers</option>
+      </select>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Language preferences:</legend>
+        <input type="checkbox" id="hindi" name="hindi" checked />
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="swahili" name="swahili" />
+        <label for="swahili">Swahili</label>
+        <input type="checkbox" id="navi" name="navi" disabled />
+        <label for="navi">Na'vi</label>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Language preferences:</legend>
+        <label>
+          <input type="checkbox" name="english" checked />
+          English
+        </label>
+        <label>
+          <input type="checkbox" name="french" checked />
+          French
+        </label>
+        <label>
+          <input type="checkbox" name="mandarin" />
+          Mandarin
+        </label>
+        <label>
+          <input type="checkbox" name="thai" />
+          Thai
+        </label>
+        <label aria-disabled="true">
+          <input type="checkbox" name="dothraki" disabled />
+          Dothraki
+        </label>
+      </fieldset>
+    </div>
+  </div>
+</div>
+{% endblock content %}

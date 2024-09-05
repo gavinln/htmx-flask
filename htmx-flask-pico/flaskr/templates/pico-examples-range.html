@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block style %}
+  {% include "pico-examples-style.html" %}
+{% endblock style %}
+
+{% block content %}
+  <div class="grid" id="pico_examples">
+    <div>{% include "pico-examples-menu.html" %}</div>
+    <div>
+      <label>
+        Brightness
+        <input type="range" />
+      </label>
+      <label>
+        Contrast
+        <input type="range" value="40" />
+      </label>
+    </div>
+  </div>
+{% endblock content %}

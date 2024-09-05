@@ -1,0 +1,56 @@
+{% extends 'base.html' %} {% block style %} {% include
+"pico-examples-style.html" %} {% endblock style %} {% block content %}
+
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h2>Basic accordion</h2>
+      <details open>
+        <summary>Accordion 1</summary>
+        <p>
+          Flamingos are known for their bright pink feathers and distinctive
+          long necks. These birds are social creatures that live in large
+          groups, and a group of flamingos is called a flamboyance. They can
+          often be seen standing on one leg, which helps them conserve body
+          heat.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>Accordion 2</summary>
+        <ul>
+          <li>Kangaroos are marsupials that are native to Australia.</li>
+          <li>
+            They are known for their powerful hind legs, which they use to hop
+            around.
+          </li>
+          <li>
+            Kangaroos can’t walk backwards due to the shape of their legs and
+            tail.
+          </li>
+          <li>
+            Baby kangaroos, called joeys, are born very small and undeveloped
+            and must crawl into their mother’s pouch to continue developing.
+          </li>
+          <li>
+            Some species of kangaroos can leap up to 30 feet in a single bound.
+          </li>
+        </ul>
+      </details>
+    </div>
+    <div>
+      <h2>Button accordion</h2>
+      <details>
+        <summary role="button">Owls</summary>
+        <p>
+          Owls are nocturnal birds of prey that are known for their distinctive
+          hooting calls. A group of owls is called a parliament, and these birds
+          are often associated with wisdom and intelligence. Owls have excellent
+          hearing and vision, which helps them hunt prey in the dark.
+        </p>
+      </details>
+    </div>
+  </div>
+</div>
+{% endblock content %}

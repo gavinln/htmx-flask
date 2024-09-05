@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block style %}
+  {% include "pico-examples-style.html" %}
+{% endblock style %}
+
+{% block content %}
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h2>Horizontal stacking</h2>
+      <fieldset>
+        <legend>Language preferences:</legend>
+        <input type="checkbox" id="hindi" name="hindi" checked />
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="swahili" name="swahili" />
+        <label for="swahili">Swahili</label>
+        <input type="checkbox" id="navi" name="navi" disabled />
+        <label for="navi">Na'vi</label>
+      </fieldset>
+    </div>
+    <div>
+      <h2>Vertical stacking</h2>
+      <fieldset>
+        <legend>Language preferences:</legend>
+        <label>
+          <input type="checkbox" name="english" checked />
+          English
+        </label>
+        <label>
+          <input type="checkbox" name="french" checked />
+          French
+        </label>
+        <label>
+          <input type="checkbox" name="mandarin" />
+          Mandarin
+        </label>
+        <label>
+          <input type="checkbox" name="thai" />
+          Thai
+        </label>
+        <label aria-disabled="true">
+          <input type="checkbox" name="dothraki" disabled />
+          Dothraki
+        </label>
+      </fieldset>
+    </div>
+  </div>
+</div>
+{% endblock content %}
