@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block style %} {% include
+"pico-examples-style.html" %} {% endblock style %} {% block content %}
+
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h2>Block element loading</h2>
+      <article aria-busy="true"></article>
+    </div>
+    <div>
+      <h2>Inline element loading</h2>
+      <span aria-busy="true">Generating your link...</span>
+    </div>
+    <div>
+      <h2>Button loading</h2>
+      <div role="group">
+        <button aria-busy="true" aria-label="Please wait…" />
+        <button aria-busy="true" aria-label="Please wait…" class="secondary" />
+        <button aria-busy="true" aria-label="Please wait…" class="contrast" />
+      </div>
+      <div role="group">
+        <button aria-busy="true" class="outline">Please wait…</button>
+        <button aria-busy="true" class="outline secondary">Please wait…</button>
+        <button aria-busy="true" class="outline contrast">Please wait…</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

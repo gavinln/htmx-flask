@@ -37,11 +37,16 @@ def html5_test():
     return render_template("html5-test.html")
 
 
+@app.route("/pico_containers")
+def pico_containers():
+    return render_template("pico-containers.html")
+
+
 @app.route("/pico_examples")
 @app.route("/pico_examples/<page>")
 def pico_examples(page=None):
     if not page:
         page = "typography"
-    template_name = "pico-examples-{}.html".format(page)
+    template_name = "pico-examples/{}.html".format(page)
     print(template_name)
     return render_template(template_name)

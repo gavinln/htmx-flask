@@ -1,0 +1,57 @@
+{% extends 'base.html' %} {% block style %} {% include
+"pico-examples-style.html" %} {% endblock style %} {% block content %}
+
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h2>Dropdown</h2>
+      <details class="dropdown">
+        <summary>Dropdown</summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+    </div>
+    <div>
+      <h2>Button Dropdown</h2>
+      <details class="dropdown">
+        <summary role="button">Button Dropdown</summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+    </div>
+    <div>
+      <h2>Nav Dropdown</h2>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="secondary">Services</a></li>
+          <li>
+            <details class="dropdown">
+              <summary>
+                Account
+              </summary>
+              <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block style %} {% include
+"pico-examples-style.html" %} {% endblock style %} {% block content %}
+
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h3>Tooltip on elements</h3>
+      <p>Tooltip on a <a href="#" data-tooltip="Tooltip">link</a></p>
+      <p>Tooltip on <i data-tooltip="Tooltip">inline element</i></p>
+      <p><button data-tooltip="Tooltip">Tooltip on a button</button></p>
+    </div>
+    <div>
+      <h3>Tooltip placement</h3>
+      <button data-tooltip="Top">Top</button>
+      <button data-tooltip="Right" data-placement="right">Right</button>
+      <button data-tooltip="Bottom" data-placement="bottom">Bottom</button>
+      <button data-tooltip="Left" data-placement="left">Left</button>
+    </div>
+  </div>
+</div>
+{% endblock content %}

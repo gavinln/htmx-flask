@@ -1,0 +1,92 @@
+{% extends 'base.html' %} {% block style %} {% include
+"pico-examples-style.html" %} {% endblock style %} {% block content %}
+
+<div class="grid" id="pico_examples">
+  <div>{% include "pico-examples-menu.html" %}</div>
+  <div>
+    <div>
+      <h3>Nav</h3>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <h3>Nav variants</h3>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="secondary">About</a></li>
+          <li><a href="#" class="contrast">Services</a></li>
+          <li><a href="#" class="outline">Products</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <h3>Nav buttons</h3>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><button class="secondary">Products</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <h3>Nav dropdowns</h3>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="secondary">Services</a></li>
+          <li>
+            <details class="dropdown">
+              <summary>Account</summary>
+              <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <h3>Nav vertical</h3>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <div>
+      <h3>Nav breadcrumb</h3>
+      <nav aria-label="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li>Design</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+{% endblock content %}
