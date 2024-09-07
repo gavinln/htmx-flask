@@ -2,13 +2,24 @@
 
 {% block title %} {{ title }} {% endblock title %}
 
+{% block style %}
+#htmx-examples {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+{% endblock style %}
+
 {% block content %}
-  <div class="grid">
-    <div hx-boost="true" hx-target="#content" hx-push-url="false">
-      <div><a href="/click_to_edit">Click to edit</a></div>
-      <div><a href="/html5_test">HTML5 test examples</a></div>
-    </div>
-    <div id="content">{{ text }}</div>
-    <div></div>
+<div class="grid" id="htmx-examples">
+  <div hx-boost="true" hx-target="#content" hx-push-url="false">
+    <div><a href="/html5_test">HTML5 test examples</a></div>
+    <div><a href="/click_to_edit">Click to edit</a></div>
+    <div><a href="/bulk_update">Bulk update</a></div>
+    <div><a href="/click_to_load">Click to load</a></div>
   </div>
+  <div id="content">{{ text }}</div>
+</div>
 {% endblock content %}

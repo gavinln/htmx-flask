@@ -1,0 +1,18 @@
+{% for contact in contacts %}
+<tr>
+  <td>{{ contact.name }}</td>
+  <td>{{ contact.email }}</td>
+  <td>{{ contact.id }}</td>
+</tr>
+{% endfor %}
+<tr id="replaceMe">
+  <td colspan="3">
+    <button
+      hx-get="/click_to_load/more_rows/?page={{ page + 1 }}"
+      hx-target="#replaceMe"
+      hx-swap="outerHTML"
+    >
+      Load More Agents...
+    </button>
+  </td>
+</tr>

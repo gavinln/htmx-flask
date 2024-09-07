@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from jinja2 import StrictUndefined
 
-from .blueprints import click_to_edit
+from .blueprints import bulk_update, click_to_edit, click_to_load
 
 
 def initialize_app(app, test_config=None):
@@ -25,11 +25,17 @@ app = initialize_app(app)
 app.jinja_env.undefined = StrictUndefined
 
 app.register_blueprint(click_to_edit.bp)
+app.register_blueprint(bulk_update.bp)
+app.register_blueprint(click_to_load.bp)
 
 
 @app.route("/")
 def index():
-    return render_template("index.html", title="Hello", text="Hello, World!")
+    return render_template(
+        "index.html",
+        title="HTMX-Flask-Pico",
+        text="Click on the left menu",
+    )
 
 
 @app.route("/html5_test")
