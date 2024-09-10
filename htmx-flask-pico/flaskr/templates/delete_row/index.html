@@ -1,0 +1,29 @@
+<form id="delete_row">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for id, contact in contacts.items() %}
+      <tr>
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.status }}</td>
+        <td>
+          <button
+            hx-delete="delete_row/contact/{{ id }}"
+            hx-target="#delete_row"
+            hx-swap="outerHTML"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</form>

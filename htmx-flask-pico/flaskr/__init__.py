@@ -1,7 +1,13 @@
 from flask import Flask, render_template
 from jinja2 import StrictUndefined
 
-from .blueprints import bulk_update, click_to_edit, click_to_load
+from .blueprints import (
+    bulk_update,
+    click_to_edit,
+    click_to_load,
+    delete_row,
+    edit_row,
+)
 
 
 def initialize_app(app, test_config=None):
@@ -27,6 +33,8 @@ app.jinja_env.undefined = StrictUndefined
 app.register_blueprint(click_to_edit.bp)
 app.register_blueprint(bulk_update.bp)
 app.register_blueprint(click_to_load.bp)
+app.register_blueprint(delete_row.bp)
+app.register_blueprint(edit_row.bp)
 
 
 @app.route("/")

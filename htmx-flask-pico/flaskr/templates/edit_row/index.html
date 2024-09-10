@@ -1,0 +1,26 @@
+<table id="edit_table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for id, contact in contacts.items() %}
+    <tr>
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>
+        <button
+          hx-get="edit_row/contact/{{ id }}/edit"
+          hx-target="closest tr"
+          hx-swap="outerHTML"
+        >
+          Edit
+        </button>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
