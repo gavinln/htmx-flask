@@ -7,6 +7,8 @@ from .blueprints import (
     click_to_load,
     delete_row,
     edit_row,
+    lazy_loading,
+    inline_validation,
 )
 
 
@@ -35,6 +37,8 @@ app.register_blueprint(bulk_update.bp)
 app.register_blueprint(click_to_load.bp)
 app.register_blueprint(delete_row.bp)
 app.register_blueprint(edit_row.bp)
+app.register_blueprint(lazy_loading.bp)
+app.register_blueprint(inline_validation.bp)
 
 
 @app.route("/")

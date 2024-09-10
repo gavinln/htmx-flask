@@ -1,0 +1,22 @@
+<h3>Signup Form</h3>
+<form>
+  <legend>Only test@test.com is a valid email</legend>
+  <div hx-target="this" hx-swap="outerHTML">
+    <label>Email Address</label>
+    <input
+      name="email"
+      hx-post="/inline_validation/contact/email"
+      hx-indicator="#ind"
+    />
+    <img id="ind" src="/img/bars.svg" class="htmx-indicator" />
+  </div>
+  <div>
+    <label>First Name</label>
+    <input type="text" name="firstName" />
+  </div>
+  <div>
+    <label>Last Name</label>
+    <input type="text" name="lastName" />
+  </div>
+  <button>Submit</button>
+</form>
