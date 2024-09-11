@@ -9,6 +9,8 @@ from .blueprints import (
     edit_row,
     lazy_loading,
     inline_validation,
+    infinite_scroll,
+    active_search,
 )
 
 
@@ -39,6 +41,8 @@ app.register_blueprint(delete_row.bp)
 app.register_blueprint(edit_row.bp)
 app.register_blueprint(lazy_loading.bp)
 app.register_blueprint(inline_validation.bp)
+app.register_blueprint(infinite_scroll.bp)
+app.register_blueprint(active_search.bp)
 
 
 @app.route("/")

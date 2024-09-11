@@ -1,0 +1,19 @@
+<h3>Search Contacts</h3>
+<input
+  type="search"
+  name="search"
+  placeholder="Begin Typing To Search Users..."
+  hx-post="/active_search/search"
+  hx-trigger="keyup changed delay:500ms, search"
+  hx-target="#search-results"
+/>
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody id="search-results"></tbody>
+</table>

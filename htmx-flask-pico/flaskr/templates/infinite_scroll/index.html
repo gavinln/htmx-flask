@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for contact in contacts %}
+    {% if loop.last %}
+    <tr
+      hx-get="/infinite_scroll/more_rows/?page=2"
+      hx-trigger="revealed"
+      hx-swap="afterend"
+      hx-target="this"
+    >
+    {% else %}
+    <tr>
+    {% endif %}
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.id }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<img id="ind" src="/static/bars.svg" class="htmx-indicator" />
