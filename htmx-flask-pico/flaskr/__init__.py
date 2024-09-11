@@ -11,6 +11,7 @@ from .blueprints import (
     inline_validation,
     infinite_scroll,
     active_search,
+    progress_bar,
 )
 
 
@@ -43,6 +44,7 @@ app.register_blueprint(lazy_loading.bp)
 app.register_blueprint(inline_validation.bp)
 app.register_blueprint(infinite_scroll.bp)
 app.register_blueprint(active_search.bp)
+app.register_blueprint(progress_bar.bp)
 
 
 @app.route("/")

@@ -1,0 +1,20 @@
+<div
+  hx-trigger="done"
+  hx-get="/progress_bar/job"
+  hx-swap="outerHTML"
+  hx-target="this"
+>
+  <h3>{{ 'Running' if not complete else 'Complete' }}</h3>
+
+  <div
+    hx-get="/progress_bar/job/progress"
+    hx-trigger="{{ 'every 600ms' if not complete else 'none' }}"
+    hx-target="this"
+    hx-swap="innerHTML"
+  >
+    <progress value="{{ percentage }}" max="100" />
+  </div>
+  {% if complete %}
+  <button hx-post="/progress_bar/start">Restart Job</button>
+  {% endif %}
+</div>
