@@ -2,16 +2,18 @@ from flask import Flask, render_template
 from jinja2 import StrictUndefined
 
 from .blueprints import (
+    active_search,
     bulk_update,
     click_to_edit,
     click_to_load,
     delete_row,
+    dialogs_pico,
     edit_row,
-    lazy_loading,
-    inline_validation,
     infinite_scroll,
-    active_search,
+    inline_validation,
+    lazy_loading,
     progress_bar,
+    value_select,
 )
 
 
@@ -45,6 +47,8 @@ app.register_blueprint(inline_validation.bp)
 app.register_blueprint(infinite_scroll.bp)
 app.register_blueprint(active_search.bp)
 app.register_blueprint(progress_bar.bp)
+app.register_blueprint(value_select.bp)
+app.register_blueprint(dialogs_pico.bp)
 
 
 @app.route("/")
