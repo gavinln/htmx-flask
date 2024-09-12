@@ -14,6 +14,7 @@ from .blueprints import (
     lazy_loading,
     progress_bar,
     value_select,
+    tabs_hateoas,
 )
 
 
@@ -49,6 +50,7 @@ app.register_blueprint(active_search.bp)
 app.register_blueprint(progress_bar.bp)
 app.register_blueprint(value_select.bp)
 app.register_blueprint(dialogs_pico.bp)
+app.register_blueprint(tabs_hateoas.bp)
 
 
 @app.route("/")
