@@ -7,6 +7,7 @@ from .blueprints import (
     click_to_edit,
     click_to_load,
     delete_row,
+    dialogs_browser,
     dialogs_pico,
     edit_row,
     infinite_scroll,
@@ -15,6 +16,7 @@ from .blueprints import (
     progress_bar,
     value_select,
     tabs_hateoas,
+    keyboard_shortcuts,
 )
 
 
@@ -49,8 +51,10 @@ app.register_blueprint(infinite_scroll.bp)
 app.register_blueprint(active_search.bp)
 app.register_blueprint(progress_bar.bp)
 app.register_blueprint(value_select.bp)
+app.register_blueprint(dialogs_browser.bp)
 app.register_blueprint(dialogs_pico.bp)
 app.register_blueprint(tabs_hateoas.bp)
+app.register_blueprint(keyboard_shortcuts.bp)
 
 
 @app.route("/")
