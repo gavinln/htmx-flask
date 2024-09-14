@@ -12,12 +12,12 @@ from .blueprints import (
     edit_row,
     infinite_scroll,
     inline_validation,
+    keyboard_shortcuts,
     lazy_loading,
     progress_bar,
-    value_select,
     tabs_hateoas,
-    keyboard_shortcuts,
     updating_other_content,
+    value_select,
 )
 
 
