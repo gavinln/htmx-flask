@@ -1,0 +1,84 @@
+<article id="solution1">
+  Solution 1: Expand the Target
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for contact in contacts %}
+      <tr>
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <form hx-post="/updating_other_content/contacts1" , hx-target="#solution1">
+    <fieldset role="group">
+      <label>Name</label>&nbsp; <input name="name" type="text" />&nbsp;
+      <label>Email</label>&nbsp;
+      <input name="email" type="email" />
+    </fieldset>
+    <input type="submit" />
+  </form>
+</article>
+<article>
+  Solution 2: Out of Band Responses
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="contacts-table2">
+      {% for contact in contacts %}
+      <tr>
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <form hx-post="/updating_other_content/contacts2">
+    <fieldset role="group">
+      <label>Name</label>&nbsp; <input name="name" type="text" />&nbsp;
+      <label>Email</label>&nbsp;
+      <input name="email" type="email" />
+    </fieldset>
+    <input type="submit" />
+  </form>
+</article>
+<article>
+  Solution 3: Triggering Events
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody
+      hx-get="/updating_other_content/contacts3/table"
+      hx-trigger="newContact from:body"
+    >
+      {% for contact in contacts %}
+      <tr>
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <form hx-post="/updating_other_content/contacts3">
+    <fieldset role="group">
+      <label>Name</label>&nbsp; <input name="name" type="text" />&nbsp;
+      <label>Email</label>&nbsp;
+      <input name="email" type="email" />
+    </fieldset>
+    <input type="submit" />
+  </form>
+</article>

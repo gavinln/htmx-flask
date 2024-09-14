@@ -1,0 +1,30 @@
+<article id="solution1">
+  <header>Solution 1: Expand the Target</header>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for contact in contacts %}
+      <tr>
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <footer>
+    <form hx-post="/updating_other_content/contacts1", hx-target="#solution1">
+      <fieldset role="group">
+        <label>Name</label>&nbsp;
+        <input name="name" type="text" />
+        <label>Email</label>&nbsp;
+        <input name="email" type="email" />
+      </fieldset>
+      <input type="submit" />
+    </form>
+  </footer>
+</article>

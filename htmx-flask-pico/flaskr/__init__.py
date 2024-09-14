@@ -17,6 +17,7 @@ from .blueprints import (
     value_select,
     tabs_hateoas,
     keyboard_shortcuts,
+    updating_other_content,
 )
 
 
@@ -55,6 +56,7 @@ app.register_blueprint(dialogs_browser.bp)
 app.register_blueprint(dialogs_pico.bp)
 app.register_blueprint(tabs_hateoas.bp)
 app.register_blueprint(keyboard_shortcuts.bp)
+app.register_blueprint(updating_other_content.bp)
 
 
 @app.route("/")
