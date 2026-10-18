@@ -20,29 +20,32 @@ watchexec -w . --poll 1s -r make serve
 
 ### Tailwind CSS
 
-https://tailwindcss.com/
+[Web site][30]
+
+[30]: https://tailwindcss.com/
 
 ### DaisyUI
 
 Component library for Tailwind CSS
 
-https://daisyui.com/
+[Web site][40]
 
+[40]: https://daisyui.com/
 
 ### CSS
 
-Flexbox in 100 seconds
+[Flexbox in 100 seconds][50]
 
-https://www.youtube.com/watch?v=K74l26pE4YA
+[50]: https://www.youtube.com/watch?v=K74l26pE4YA
 
-Learn Flexbox
+[Learn Flexbox][60]
 
-https://www.youtube.com/watch?v=phWxA89Dy94
+[60]: https://www.youtube.com/watch?v=phWxA89Dy94
 
-Grid in 100 seconds
+[Grid in 100 seconds][70]
 
-https://www.youtube.com/watch?v=uuOXPWCh-6o
+[70]: https://www.youtube.com/watch?v=uuOXPWCh-6o
 
-Learn CSS Grid
+[Learn CSS Grid][80]
 
-https://www.youtube.com/watch?v=EiNiSFIPIQE
+[80]: https://www.youtube.com/watch?v=EiNiSFIPIQE
