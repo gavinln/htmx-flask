@@ -31,40 +31,44 @@ nix flake lock
 nix develop
 ```
 
-## HTMX examples
-
-https://htmx.org/examples/
-
-Flask with HTMX examples
-
-https://github.com/Konfuzian/htmx-examples-with-flask
-
-Flask with HTMX Tutorial
-
-https://codecapsules.io/tutorial/building-a-full-stack-application-with-flask-and-htmx/
-
-HTMX plugin for Flask
-
-https://github.com/edmondchuc/flask-htmx
-
 ## Links
 
-### Google cloud run like Vercel and Netlify
+[Google cloud run like Vercel and Netlify][1000]
 
-https://hackernoon.com/deploy-like-vercel-and-netlify-with-cloud-run-live-preview-and-modern-workflow
+[1000]: https://hackernoon.com/deploy-like-vercel-and-netlify-with-cloud-run-live-preview-and-modern-workflow
+
+[HTMX will finally make sense][1010]
+
+[1010]: https://www.youtube.com/watch?v=KStTlCaeVIM
+
+[HTMX examples][1020]
+
+[1020]: https://htmx.org/examples/
+
+[Flask with HTMX examples][1030]
+
+[1030]: https://github.com/Konfuzian/htmx-examples-with-flask
+
+[Flask with HTMX Tutorial][1040]
+
+[1040]: https://codecapsules.io/tutorial/building-a-full-stack-application-with-flask-and-htmx/
+
+[HTMX plugin for Flask][1050]
+
+[1050]: https://github.com/edmondchuc/flask-htmx
 
 ### djhtml
 
-DJHTML is a Django/Jinja HTML/CSS/Javascript indenter
+[DJHTML is a Django/Jinja HTML/CSS/Javascript indenter][1060]
 
-https://github.com/rtts/djhtml
+[1060]: https://github.com/rtts/djhtml
 
 ### Flask vs FastAPI
 
-Moving from Flask to FastAPI
+[Moving from Flask to FastAPI][1070]
 
-https://testdriven.io/blog/moving-from-flask-to-fastapi/
+[1070]: https://testdriven.io/blog/moving-from-flask-to-fastapi/
 
-Flask vs FastAPI
+[Flask vs FastAPI][1080]
 
-https://christophergs.com/python/2021/06/16/python-flask-fastapi/
+[1080]: https://christophergs.com/python/2021/06/16/python-flask-fastapi/
