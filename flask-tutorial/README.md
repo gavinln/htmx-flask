@@ -21,7 +21,7 @@ make flaskr-init-db
 make flaskr-run
 ```
 
-3. Open a web browser at http://localhost:5000/
+3. Open a web browser at `http://localhost:5000/`
 
 4. Register a new user by clicking on "Register"
 
@@ -38,7 +38,8 @@ poetry build
 
 ## Use the whl file
 
-On WSL it can take 10 times as long to create a virtual environment (venv) on a shared folder as compared to a WSL folder.
+On WSL it can take 10 times as long to create a virtual environment (venv) on a
+shared folder as compared to a WSL folder.
 
 1. Create a venv on a WSL folder
 
