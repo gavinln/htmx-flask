@@ -4,9 +4,13 @@ Demonstrates how to use TailwindCSS with Flask
 
 ## Tailwind CSS with Flask
 
-Blog - https://www.dentonzhou.com/blog/tailwind-flask-quart-django-no-node
+[Blog][10]
 
-Github repo - https://github.com/dentonzh/flask-tailwind-no-node
+[10]: https://www.dentonzhou.com/blog/tailwind-flask-quart-django-no-node
+
+[Github repo][20]
+
+[20]: https://github.com/dentonzh/flask-tailwind-no-node
 
 ## Tips
 
