@@ -2,14 +2,14 @@
 
 ## Minimal CSS frameworks
 
-Github repository comparing minimal classless CSS frameworks
+Github repository comparing minimal [classless][10] CSS frameworks
 
-https://github.com/dbohdan/classless-css
+[10]: https://github.com/dbohdan/classless-css
 
-Repository with an HTML 5 elements page to compare CSS frameworks
+Repository with an [HTML 5 elements][20] page to compare CSS frameworks
 
-https://github.com/cbracco/html5-test-page
+[20]: https://github.com/cbracco/html5-test-page
 
-Pico CSS - a minimal CSS framework for semantic HTML
+[Pico CSS][30] - a minimal CSS framework for semantic HTML
 
-https://github.com/picocss/pico
+[30]: https://github.com/picocss/pico
